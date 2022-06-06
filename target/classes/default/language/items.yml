@@ -1,0 +1,34 @@
+PHYSICAL_SHARE_BILL:
+  type: PAPER
+  name: '&aShare Bill'
+  model-data: 0
+  lore:
+    - '&7This bill can be used at the broker'
+    - '&7to redeem &c{amount} &7shares of &c{stock-name}&7.'
+    - '&7'
+    - '&7Leverage: &c{leverage}'
+    - '&7Share Type: &c{type}'
+    - '&7'
+    - '&7Generated on &c{date}'
+
+TRADING_BOOK:
+  type: WRITABLE_BOOK
+  name: '&6Trading Book'
+  model-data: 0
+  lore:
+    - '&6This book enables you to interact with trading boards.'
+    - ''
+    - '&7First page: the amount of shares you want'
+    - '&7The max price before the share is automatically closed'
+    - '&7The min price before the share is automatically closed'
+
+STOCK_MAP:
+  type: FILLED_MAP
+  name: '&6Stock Map ({stock-name})'
+  model-data: 0
+  lore:
+    - '&7Stock Name: {stock-name}'
+    - '&7Time Scale: {time-scale}'
+    - '&7Stock Type: {stock-type}'
+    - '&7Highest Price: {highest-price}'
+    - '&7Lowest Price: {lowest-price}'

@@ -1,0 +1,60 @@
+# GUI display name
+name: 'Stocks ({page}/{max})'
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 54
+
+items:
+  next-page:
+    slots: [ 53 ]
+    function: 'next-page'
+    item: ARROW
+    name: '&aNext Page'
+  prev-page:
+    slots: [ 45 ]
+    function: 'previous-page'
+    name: '&aPrevious Page'
+    item: ARROW
+  stock:
+    slots: [ 10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34 ]
+    function: stock
+
+    # Used when a stock exchanges physical items
+    physical:
+      name: '&a{name}'
+      item: BOOK
+      lore:
+        - '&7Current Price: ${price}'
+        - '&7Exchange Type: {exchange-type}'
+        - '---------------------------'
+        - '&7 Day Low: ${day-low}'
+        - '&7 Day High: ${day-high}'
+        - '---------------------------'
+        - '&7 Week Low: ${week-low}'
+        - '&7 Week High: ${week-high}'
+        - '---------------------------'
+        - ''
+        - '&3► Left click to buy/sell shares'
+        - '&3► Right click to see your orders'
+
+    # When a stock exchanges money
+    name: '&a{name}'
+    item: BOOK
+    lore:
+      - '&7Current Price: ${price}'
+      - '---------------------------'
+      - '&7 Day Low: ${day-low}'
+      - '&7 Day High: ${day-high}'
+      - '---------------------------'
+      - '&7 Week Low: {week-low}'
+      - '&7 Week High: {week-high}'
+      - '---------------------------'
+      - ''
+      - '&3► Left click to buy/sell shares'
+      - '&3► Right click to see your orders'
+
+    # When there are no stock at a target slot
+    none:
+      name: '&aNo Stock'
+      item: PAPER

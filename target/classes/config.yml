@@ -1,0 +1,72 @@
+# Notifies players with the 'stonks.update-notify' perm
+# node when they join the server if a new update is available
+# for download. Requires a server reload when changed.
+update-notify: true
+
+# The stock API you want to use, it can be:
+# Finnhub : 60 calls/min, 15min delay (with a free API key)
+# Alphavantage : 5 calls/min with 500calls/day, roughly 20min delay (with a free API key)
+# Twelvedata : 8 calls/min with 800 calls/day, with nearly delay (with a free API key)
+
+stock-api:
+  enabled: true
+  used: 'finnhub'
+  key: ''
+
+# How stock prices display in item lores
+# Check out 'DecimalFormat java' online for more info
+stock-price-decimal-format: '0.##'
+
+# How the amount of shares are displayed in messages
+shares-decimal-format: '0.#'
+
+# How frequently display maps refresh
+map-refresh-time: 30
+
+# How frequently display boards refresh
+board-refresh-time: 10
+
+# How frequently Stonks checks for shares that need to automatically close
+share-refresh-time: 60
+
+# How frequently display signs refresh
+sign-refresh-time: 10
+
+# Default tax rate on share benefit
+default-tax-rate: 0
+
+# The way dates are formatted in the plugin
+# Check out this page for more info
+# https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+date-format: 'EEE, d MMM yyyy HH:mm:ss'
+
+# Time during which the stock market is closed,
+# ie no shares can be bought or closed.
+# Hours must be within 0 and 23
+# Minutes must be within 0 and 59
+close-time:
+  enabled: true
+  from:
+    hour: 22
+    min: 30
+  to:
+    hour: 4
+    min: 0
+
+# Hour of the day at which dividends are given to players.
+dividends-redeem-hour: 10
+
+# The dividends that will be applied to new stocks where no custom dividends was specified.
+default-dividends:
+  formula: "0.1 * {price} * {amount}"
+  period: 1
+
+# How a custom sign displays information about a stock.
+custom-sign-format:
+  - '{stock-name}'
+  - '${current-price}'
+  - ''
+  - '{day-evolution}'
+
+# Max interaction distance for a player to click a button on the board
+max-interaction-distance: 20

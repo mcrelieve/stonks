@@ -1,0 +1,64 @@
+# GUI display name
+name: '{share-status} Shares of {name}'
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 54
+
+items:
+  back:
+    slots: [ 37 ]
+    function: back
+    name: '&aBack'
+    item: OAK_SIGN
+  next-page:
+    slots: [ 53 ]
+    function: 'next-page'
+    item: ARROW
+    name: '&aNext Page'
+  prev-page:
+    slots: [ 45 ]
+    function: 'previous-page'
+    name: '&aPrevious Page'
+    item: ARROW
+  share:
+    slots: [ 10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34 ]
+    function: share
+    name: '&a{name}'
+    item: BOOK
+    lore:
+      - ''
+      - '&7Shares: &f{amount}'
+      - '&7Leverage: &fx{leverage}'
+      - '&7Share Type: &f{share-type}'
+      - '&7Current Stock Price: &f${current-stock}'
+      - '&7Initial Stock Price: &f${initial-stock}'
+      - ''
+      - '&8Price for Automatic Closure'
+      - '&7Minimum: &f{min-price}'
+      - '&7Maximum: &f{max-price}'
+      - ''
+      - '&7Initial Share Price: {initial-share}'
+      - '&7Current Share Price: {current-share}'
+      - ''
+      - '&8-------------------------------'
+      - '&7&lGain if closed now: {gain}'
+      - '&8-------------------------------'
+      - ''
+      - '&e► Left click to close it.'
+      - '&e► Right click to transfer it into a share paper.'
+    no-share:
+      item: PAPER
+      name: '&aNo Share'
+  switch-viewed-shares:
+    slots: [ 43 ]
+    function: 'switch-viewed-shares'
+
+    # 'Show Open Shares' item
+    show-open:
+      name: '&aShow Open Shares'
+      item: 'BLUE_WOOL'
+
+    # 'Show Closed Shares' item
+    name: '&cShow Closed Shares'
+    item: 'RED_WOOL'

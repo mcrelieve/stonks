@@ -1,0 +1,9 @@
+description:
+    time-scale: 'Time Scale: {time-scale}'
+    stock-name: 'Name: {stock-name}'
+    stock-type:  'Type: {stock-type}'
+    exchange-type: 'Exchange Type: {exchange-type}'
+    current-price: 'Current price: {current-price}'
+    lowest-price:  'Lowest Price: {lowest-price}'
+    highest-price:  'Highest Price: {highest-price}'
+    evolution: 'Evolution: {evolution}'

@@ -1,0 +1,162 @@
+# GUI display name
+name: 'Shares for {name}'
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 54
+
+items:
+  back:
+    slots: [ 37 ]
+    function: back
+    name: '&aBack'
+    item: OAK_SIGN
+  buy1:
+    slots: [ 23 ]
+    function: buy1
+    name: '&aBuy {amount} Share'
+    item: LIME_CONCRETE
+    lore:
+      - ''
+      - '&7Buy {amount} share with leverage {leverage}'
+      - '&7Min price is {min-price}'
+      - '&7Max-price is {max-price}'
+      - '&7Price: &f${price}'
+      - ''
+      - '&e► Click to buy.'
+  buy10:
+    slots: [ 24 ]
+    function: buy10
+    name: '&aBuy {amount} Shares'
+    item: LIME_CONCRETE
+    lore:
+      - ''
+      - '&7Buy {amount} shares with leverage {leverage}'
+      - '&7Min price is {min-price}'
+      - '&7Max-price is {max-price}'
+      - '&7Price: &f${price}'
+      - ''
+      - '&e► Click to buy.'
+  buy100:
+    slots: [ 25 ]
+    function: buy100
+    name: '&aBuy {amount} Shares'
+    item: LIME_CONCRETE
+    lore:
+      - ''
+      - '&7Buy {amount} shares with leverage {leverage}'
+      - '&7Min price is {min-price}'
+      - '&7Max-price is {max-price}'
+      - '&7Price: &f${price}'
+      - ''
+      - '&e► Click to buy.'
+  buy-custom:
+    slots: [ 32 ]
+    function: buy-custom
+    name: '&aBuy Shares'
+    item: LIME_TERRACOTTA
+    lore:
+      - ''
+      - '&7Buy a custom amount of shares with leverage {leverage}'
+      - '&7Min price is {min-price}'
+      - '&7Max-price is {max-price}'
+      - '&7(Write in the chat the amount you want)'
+      - ''
+      - '&e► Click to buy.'
+  sell1:
+    slots: [ 21 ]
+    function: sell1
+    name: '&aShort {amount} Share'
+    item: RED_CONCRETE
+    lore:
+      - ''
+      - '&7Short {amount} share with leverage {leverage}'
+      - '&7Min price is {min-price}'
+      - '&7Max-price is {max-price}'
+      - '&7Price: &f${price}'
+      - ''
+      - '&e► Click to sell.'
+  sell10:
+    slots: [ 20 ]
+    function: sell10
+    name: '&aShort {amount} Shares'
+    item: RED_CONCRETE
+    lore:
+      - ''
+      - '&7Short {amount} shares with leverage {leverage}'
+      - '&7Min price is {min-price}'
+      - '&7Max-price is {max-price}'
+      - '&7Price: &f${price}'
+      - ''
+      - '&e► Click to sell.'
+  sell100:
+    slots: [ 19 ]
+    function: sell100
+    name: '&aShort {amount} Shares'
+    item: RED_CONCRETE
+    lore:
+      - ''
+      - '&7Short {amount} shares with leverage {leverage}'
+      - '&7Min price is {min-price}'
+      - '&7Max-price is {max-price}'
+      - '&7Price: &f${price}'
+      - ''
+      - '&e► Click to sell.'
+  sell-custom:
+    slots: [ 30 ]
+    function: sell-custom
+    name: '&aShort Shares'
+    item: MAGENTA_TERRACOTTA
+    lore:
+      - ''
+      - '&7Short a custom amount of shares with leverage {leverage}'
+      - '&7Min price is {min-price}'
+      - '&7Max-price is {max-price}'
+      - '&7(Write in the chat the amount you want)'
+      - ''
+      - '&e► Click to sell.'
+  stock-info:
+    slots: [ 13 ]
+    function: info
+    name: '&a{name}'
+    item: BOOK
+    lore:
+      - ''
+      - '&71 Hour Evolution: {hour-evolution}'
+      - '&71 Day Evolution: {day-evolution}'
+      - '&71 Week Evolution: {week-evolution}'
+      - '&71 Month Evolution: {month-evolution}'
+      - ''
+      - '&71 Week Extrema: &c${week-low} &7- &a${week-high}'
+      - '&71 Month Extrema: &c${month-low} &7- &a${month-high}'
+  leverage:
+    slots: [ 43 ]
+    function: leverage
+    name: '&aLeverage'
+    item: TRIPWIRE_HOOK
+    lore:
+      - ''
+      - '&7Current leverage is &f{leverage}'
+      - ''
+      - '&e► Click to change it.'
+  min-price:
+    slots: [41]
+    function: min-price
+    name: '&aMinimum price'
+    item: ORANGE_CONCRETE
+    lore:
+      -  '*Optionnal*'
+      - '&7Current Min Price is &f{min-price}'
+      - ''
+      - '&e► Click to change it.'
+
+  max-price:
+    slots: [42]
+    function: max-price
+    name: '&aMaximum price'
+    item: LIGHT_BLUE_CONCRETE
+    lore:
+      -  '*Optionnal*'
+      - '&7Current Max Price is &f{max-price}'
+      - ''
+      - '&e► Click to change it.'
